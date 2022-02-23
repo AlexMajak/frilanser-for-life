@@ -1,0 +1,106 @@
+<!-- Сообщаем браузеру как стоит обрабатывать эту страницу -->
+<!DOCTYPE html>
+<!-- Оболочка документа, указываем язык содержимого -->
+<html lang="ru">
+  <!-- Заголовок страницы, контейнер для других важных данных (не отображается) -->
+  <head>
+    <!-- Заголовок страницы в браузере -->
+    <title>Знакомство с HTML тэгами. Часть №3 (Формы)</title>
+    <!-- Кодировка страницы -->
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+  </head>
+  <!-- Отображаемое тело страницы -->
+  <body>
+    <form action="#" method="post" enctype="multipart/form-data">
+      <div class="">
+        <p>Имя:</p>
+        <input placeholder="Имя" tabindex="1" name="userName" type="text" />
+      </div>
+      <div class="">
+        <p>Имя:</p>
+        <input
+          tabindex="2"
+          placeholder="Пароль"
+          name="userPass"
+          type="password"
+        />
+      </div>
+      <div class="">
+        <p>Телефон:</p>
+        <input
+          tabindex="3"
+          placeholder="Номер телефона"
+          name="userPhone"
+          type="tel"
+        />
+      </div>
+      <div class="">
+        <p>Пол:</p>
+        <div class="">
+          <input
+            checked
+            tabindex="4"
+            name="person"
+            type="radio"
+            value="male"
+          />Мужской
+        </div>
+        <div class="">
+          <input
+            tabindex="4"
+            name="person"
+            type="radio"
+            value="femaly"
+          />Женский
+        </div>
+      </div>
+      <div class="">
+        <p>Имущество:</p>
+        <div class="">
+          <input
+            checked
+            tabindex="5"
+            name="bike"
+            value="yes"
+            type="checkbox"
+          />Велик
+        </div>
+        <div class="">
+          <input tabindex="6" name="car" value="yes" type="checkbox" />Машина
+        </div>
+        <div class="">
+          <input
+            disabled
+            tabindex="7"
+            name="apartment"
+            value="no"
+            type="checkbox"
+          />Квартира
+        </div>
+      </div>
+      <div class="">
+        <p>Дополнительная информация:</p>
+        <textarea tabindex="8" name="text" id=""></textarea>
+      </div>
+      <div class="">
+        <p>Прикрепить фото:</p>
+        <input tabindex="9" type="file" name="yourFile" id="" />
+      </div>
+      <div class="">
+        <p>Любимый цвет:</p>
+        <select tabindex="10" name="color" id="">
+          <option value="red">Красный</option>
+          <option value="green">Зеленый</option>
+          <option selected value="yellow">Желтый</option>
+        </select>
+      </div>
+      <div class="">
+        <p>Действия:</p>
+        <button tabindex="11" type="submit">Отправить</button>
+        <button tabindex="12" type="reset">Очистить</button>
+      </div>
+    </form>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
